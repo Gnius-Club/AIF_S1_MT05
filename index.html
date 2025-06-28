@@ -1,24 +1,308 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 5: Refinando la Forma y la Autoría</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 5: Refinando la Forma y la Autoría</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes aprendan a usar 'Fillet' (Redondeo) y 'Chamfer' (Chaflán) para mejorar estética y funcionalidad.</li>
+                                        <li>Que participen en una discusión guiada sobre la ética de la co-creación con IA.</li>
+                                        <li>Que comprendan y articulen su rol como autores en un paradigma de Diseño Aumentado (Human-in-the-Loop).</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un modelo 3D refinado con operaciones de 'Fillet' y/o 'Chamfer' aplicadas a sus bordes.</li>
+                                        <li>Una nueva sección en su "Brief de Diseño" titulada "Declaración de Autoría y Rol del Diseñador", con una reflexión de 2-3 frases.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar la conexión a internet y el funcionamiento de Onshape y Xolo.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Repasar los conceptos de 'Fillet' y 'Chamfer', y preparar la discusión sobre 'Human-in-the-Loop' y la autoría en el diseño con IA.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener un modelo 3D simple en Onshape listo para demostrar en vivo la aplicación de un 'Fillet' y un 'Chamfer', mostrando el "antes" y el "después".</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono de la sesión, enfocada tanto en el refinamiento técnico como en la reflexión ética.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador introduce el doble desafío de la sesión: refinar el producto y definir la autoría.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos. Tienen un sólido 3D. Es funcional, pero es crudo. Hoy, nos enfocaremos en los detalles que transforman un bloque en un producto: los acabados. Pero también abordaremos una pregunta más profunda: con todas las herramientas y asesores de IA que han usado, ¿de quién es realmente este diseño?</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre: 'Hola Xolo, listo para la Misión 5', seguido de su nombre, perfil y gustos. Esperen su confirmación para continuar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Presentar las herramientas de refinamiento y plantear formalmente el dilema ético de la co-creación con IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Refinamiento y el Dilema Ético ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta las herramientas 'Fillet' y 'Chamfer' y el desafío conceptual de la autoría.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Observen cualquier objeto a su alrededor. Los bordes rara vez son filosos, suelen ser redondeados o biselados. Esto mejora la ergonomía y la estética. Hoy aprenderán a aplicar 'Fillet' y 'Chamfer' en Onshape. Paralelamente, reflexionaremos: la IA generó su moodboard, Xolo les ayudó con la estrategia, el Advisor les dio la técnica. Su misión hoy es doble: refinar técnicamente su modelo y empezar a definir su rol como autor y director en este nuevo paradigma.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje combinado de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es de alto nivel. Al final de la sesión, podrán decir: <strong>'Yo puedo aplicar operaciones de refinamiento a mi modelo 3D y puedo articular mi contribución y autoría en un proyecto co-creado con Inteligencia Artificial.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Técnica, Ética y Autoría) ⏰ 15 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender la técnica de refinamiento, el concepto de Diseño Aumentado y el rol del Humano-en-el-Bucle.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Consulta Técnica de Refinamiento ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan sobre las herramientas, donde Xolo actúa como profesor de IA y ética.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entremos al A.I. GYM. Hoy, el rol de Xolo se expande, hablándoles de técnica y filosofía. Comiencen con la parte técnica. Consulten al AI Advisor: <strong>'What is the difference between a fillet and a chamfer in Onshape?'</strong>. Esto aclarará el 'cómo'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diálogo sobre Diseño Aumentado ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador guía una consulta a Xolo para iniciar la reflexión sobre la autoría.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la pregunta importante. La IA generó su inspiración visual. Yo les ayudé con la estrategia. El Advisor les dio la sintaxis. Para entender este escenario, conocido como Diseño Aumentado por IA, pregúntenle a Xolo: <strong>'Xolo, si las IAs me ayudan con la inspiración, estrategia y técnica, ¿qué parte del mérito o autoría me corresponde?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Definición del Rol "Humano-en-el-Bucle" ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes consultan a Xolo sobre su rol fundamental en este nuevo paradigma.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para consolidar este concepto, hagan una última pregunta a Xolo: <strong>'Xolo, explícame qué significa ser el 'Humano-en-el-Bucle' en el diseño con IA.'</strong> Su respuesta es la clave para la última fase de la clase. Son los curadores, directores y responsables éticos. Su contribución es la visión, la intención y la toma de decisiones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Refinamiento Técnico y Reflexión Ética) ⏰ 10 minutos</h2>
+                <p>Fase de trabajo práctico donde los estudiantes aplican el refinamiento técnico y documentan su reflexión sobre la autoría.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Aplicación Técnica de Refinamiento ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los estudiantes aplican 'Fillet' y 'Chamfer' a sus modelos 3D.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Abran su modelo 3D en Onshape. Utilizando el ciclo de consulta, apliquen 'Fillet' o 'Chamfer' a los bordes de su modelo para refinarlo. Experimenten con diferentes radios y distancias para observar cómo afectan al diseño final.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Reflexión y Documentación sobre la Autoría ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guiados por un prompt de Xolo, los estudiantes escriben su "Declaración de Autoría".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Para finalizar el Brain Spark, abran su Brief de Diseño y creen una nueva sección titulada "Declaración de Autoría y Rol del Diseñador". Respondan a esta pregunta de Xolo en 2-3 frases: <strong>"Considerando el proceso completo, ¿cuál fue tu contribución única y fundamental en este proyecto? ¿Qué decisiones tomaste tú que una IA no podría haber tomado?"</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final para compartir los modelos refinados y las declaraciones de autoría, cerrando el primer módulo del curso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador guía una reflexión final sobre el concepto de autoría.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su modelo refinado y lean su declaración. Piensen: <strong>¿Cambió su percepción de 'ser el autor' después de esta reflexión? ¿En qué parte del proceso se sintieron más como 'directores'?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Discusión en Parejas) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten en parejas el antes y después de su modelo y su declaración de autoría.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, compartan sus pantallas. Muestren el "antes" (con bordes filosos) y el "después" (con bordes tratados). Lean en voz alta su "Declaración de Autoría" y discutan sus reflexiones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre del Módulo) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador pide a voluntarios compartir, y cierra el Módulo 1.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Volvemos al grupo. ¿Algún voluntario que quiera leer su declaración de autoría? (Escucha 1-2 respuestas). Han completado su primer ciclo de diseño. Han transformado una idea abstracta en un objeto digital refinado y, más importante, han reflexionado sobre su nuevo rol. No son reemplazados por la IA; son aumentados por ella. Esta pieza estática es su diploma del Módulo 1. En el siguiente módulo, introduciremos el movimiento. Prepárense.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
